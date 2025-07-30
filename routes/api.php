@@ -1,10 +1,10 @@
 <?php
 
+use App\Http\Controllers\Api\v1\CustomerController;
+use App\Http\Controllers\Api\v1\InvoiceController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\v1\CustomerController;
-use App\Http\Controllers\Api\InvoiceController;
-use App\Http\Resources\v1\CustomerResource;
+
 Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
